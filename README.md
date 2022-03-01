@@ -1,1 +1,1 @@
-# Smart-Contract-Token-Development
+# smart-contract-token-development
