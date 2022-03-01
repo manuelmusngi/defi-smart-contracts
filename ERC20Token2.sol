@@ -58,14 +58,14 @@ contract ERC20Token2 is ERC20Interface {
         return balances[_owner];
     }
 
-    // Set
+    // Set for approval
     function approve(address _spender, uint256 _value) public returns (bool success) {
         allowed[msg.sender][_spender] = _value;
         emit Approval(msg.sender, _spender, _value); //solhint-disable-line indent, no-unused-vars
         return true;
     }
 
-    // Return the
+    // Return notification
     function allowance(address _owner, address _spender) public view returns (uint256 remaining) {
         return allowed[_owner][_spender];
     }
