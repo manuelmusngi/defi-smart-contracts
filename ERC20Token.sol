@@ -2,7 +2,7 @@
 ///Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 //
 
-pragma solidity = 0.8.12;
+pragma solidity ^0.8.0;
 
 import "./erc20Interface.sol";
 
