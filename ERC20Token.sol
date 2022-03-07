@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-///Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
+// Implements EIP20 token standard: https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md
 //
 
 pragma solidity ^0.8.0;
@@ -13,9 +13,9 @@ contract ERC20Token is ERC20Interface {
     mapping (address => mapping (address => uint256)) public allowed;
 
     uint256 public totSupply;             // Total number of tokens to be distributed
-    string public name;                   // Descriptive name (i.e. For Dummies Sample Token)
+    string public name;                   // Descriptive name
     uint8 public decimals;                // How many decimals to use when displaying amounts
-    string public symbol;                 // Short identifier for token (i.e. FDT)
+    string public symbol;                 // Short identifier for token 
 
     // Create the new token and assign initial values, including initial amount
     constructor(
@@ -26,9 +26,9 @@ contract ERC20Token is ERC20Interface {
     ) public {
         balances[msg.sender] = _initialAmount;               // The creator owns all initial tokens
         totSupply = _initialAmount;                          // Update total token supply
-        name = _tokenName;                                   // Store the token name (used for display only)
-        decimals = _decimalUnits;                            // Store the number of decimals (used for display only)
-        symbol = _tokenSymbol;                               // Store the token symbol (used for display only)
+        name = _tokenName;                                   // Store the token name 
+        decimals = _decimalUnits;                            // Store the number of decimals 
+        symbol = _tokenSymbol;                               // Store the token symbol 
     }
 
     // Transfer tokens from msg.sender to a specified address
