@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: AGPL-3.0-or-later
+// SPDX-License-Identifier: MIT
 // File: openzeppelin-solidity/contracts/math/SafeMath.sol
 
 pragma solidity ^0.8.12;
 
 /*
- * Arithmetic operations in Solidity wrap on overflow
+ * Arithmetic operations in Solidity 
  */
 
 // Using this library instead of the unchecked operations eliminates an entire
