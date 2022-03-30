@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.12;
 
-interface IUniswapV2Factory {
+interface exampleIUniswapV2Factory {
     function createPair(address tokenA, address tokenB)
         external
         returns (address pair);
