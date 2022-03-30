@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.12;
 
-contract Ownable is Context {
+contract exampleOwnable is Context {
     address private _owner;
     address private _previousOwner;
     event OwnershipTransferred(
