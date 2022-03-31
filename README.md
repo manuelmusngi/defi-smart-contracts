@@ -1,3 +1,3 @@
 # smart-contract-development
 
-Smart Contract development in Solidity  
+DeFi Smart Contract development in Solidity  
