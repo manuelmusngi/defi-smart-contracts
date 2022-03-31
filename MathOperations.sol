@@ -7,9 +7,6 @@ pragma solidity ^0.8.12;
  * Arithmetic operations in Solidity 
  */
 
-// Using this library instead of the unchecked operations eliminates an entire
-// class of bugs, so it's recommended to use it always.
-
 library SafeMath {
     // Addition of two unsigned integers
     function add(uint256 a, uint256 b) internal pure returns (uint256) {
@@ -33,8 +30,7 @@ library SafeMath {
         return c;
     }
 
-    // Multiplication of two unsigned integers.
-     
+    // Multiplication of two unsigned integers. 
     function mul(uint256 a, uint256 b) internal pure returns (uint256) {
         // Gas optimization: this is cheaper than requiring 'a' not being zero, but the
         // benefit is lost if 'b' is also tested.
@@ -48,13 +44,12 @@ library SafeMath {
         return c;
     }
 
-    // Division of two unsigned integers
+    // Division of two unsigned integers   
     function div(uint256 a, uint256 b) internal pure returns (uint256) {
         return div(a, b, "SafeMath: division by zero");
     }
 
     // Division of two unsigned integers 
-     
     function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
         // Solidity only automatically asserts when dividing by 0
         require(b > 0, errorMessage);
